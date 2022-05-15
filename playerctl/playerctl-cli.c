@@ -936,7 +936,7 @@ static int handle_list_all_flag() {
     }
 
     if (!one_selected && !no_status_error_messages) {
-        g_printerr("No players found\n");
+        g_print("No players found\n");
     }
 
     pctl_player_name_list_destroy(player_names_list);
@@ -1292,7 +1292,7 @@ int main(int argc, char *argv[]) {
     if (!follow) {
         if (!has_selected) {
             if (!no_status_error_messages) {
-                g_printerr("No players found\n");
+                g_print("No players found\n");
             }
             exit_status = 1;
             goto end;
